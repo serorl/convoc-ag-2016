@@ -1,0 +1,42 @@
+<!doctype html>
+<head>
+  <style type="text/css" media="screen">
+  .visible {
+    display: block;
+  }
+  #cache {
+    display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="cache">
+    ceci est l'aide cachée
+  </div>
+
+    <input type="checkbox" name="box1" value="3" checked > cliquer ici </input>
+    <input type="button" name="name" value="soumettre" onClick="test();">
+
+    <input type="button" name="name" value="aide" onClick="window.open('texte.txt','popup','width=600,height=400');" >
+
+  <script type="text/javascript">
+
+  function test()
+    {
+    var valcheck = document.getElementById("box1").value ;
+    document.write('valcheck'+"toto");
+
+   //   if box1.checked = true then {
+   //     document.getElementById("cache").id ="visible1" ;
+   //     document.getElementById("visible1").className ="visible" ;
+    
+      }
+      return;
+    }
+
+</script>
+
+
+</body>
+</html>
